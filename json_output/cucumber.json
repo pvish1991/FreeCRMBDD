@@ -1,0 +1,270 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Free CRM Create a new deal scenario",
+        "description": "",
+        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4434956200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user is already on login Page",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2019199900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "title of login page is Free CRM",
+            "match": {
+              "location": "DealsStepWithMapDefinition.title_of_login_page_is_free_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4178036100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user clicks on login link",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_clicks_on_login_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150424100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user enters username and password",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "pvish1991@gmail.com",
+                  "Test@123"
+                ],
+                "line": 29
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3055230800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3019287100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user is on home page",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 288039100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user moves to new deal page",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_hits_on_contact_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2141328400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user clicks on create button",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_clicks_on_create_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8264099400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user enters deal details",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_enters_contacts_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "probability",
+                  "amount",
+                  "commission"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "test deal1",
+                  "50",
+                  "1000",
+                  "100"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "test deal2",
+                  "60",
+                  "3000",
+                  "500"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "test deal3",
+                  "80",
+                  "2000",
+                  "300"
+                ],
+                "line": 39
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 897202700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Close the browser",
+            "match": {
+              "location": "DealsStepWithMapDefinition.Close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Deal data Creation",
+    "description": "",
+    "id": "deal-data-creation",
+    "keyword": "Feature",
+    "uri": "C:/QA/Selenium_WorkSpace/FreeCrmBDDFrameWork/src/main/java/Features/dealsmap.feature"
+  }
+]
